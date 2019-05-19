@@ -11,7 +11,7 @@ const countUniqueValues = (arr) => {
         }
        
     }
-    return arr.splice(0,i+1);
+    return arr.splice(0,i+1).length;
 
 }
 
