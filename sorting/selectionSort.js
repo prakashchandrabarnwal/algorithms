@@ -7,7 +7,7 @@ const selectionSort = (arr) => {
             }
         }
         if(i !== smallest){
-            let temp = arr[i]
+            let temp = arr[i];
             arr[i] = arr[smallest];
             arr[smallest] = temp;
         }
