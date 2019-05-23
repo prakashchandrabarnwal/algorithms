@@ -21,9 +21,11 @@
 */
 const bubbleSort = (arr) => {
     let noSwaps;
+    let c=0;
     for(let i = arr.length ; i > 0; i--){
         noSwaps=true;
         for(let j = 0; j < i-1; j++){
+            console.log(c++);
             if(arr[j]>arr[j+1]){
                 noSwaps=false;
                 let temp = arr[j];
@@ -36,4 +38,4 @@ const bubbleSort = (arr) => {
     return arr;
 }
 
- console.log(bubbleSort([2,3,1,2]));
+ console.log(bubbleSort(Array.apply(null,{length:100000}).map(Function.call,Math.random)));
